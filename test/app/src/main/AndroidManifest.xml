@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test.test"
+    android:sharedUserId="android.uid.system">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <!-- isWifiEnabled -->
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <!-- setWifiEnabled -->
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <!-- getDataEnabled -->
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <!-- setDataEnabled -->
+        <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+
+        <!-- 允许设置时区 -->
+        <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.FLASHLIGHT" />
+        <uses-permission android:name="android.permission.READ_LOGS" />
+        <!-- 允许程序读取或写入系统设置 -->
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+        <!-- 定位权限 -->
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.location" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.BATTERY_STATS" />
+        <!-- 格式化SD卡 -->
+        <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+        <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> -->
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="false" />
+
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.REBOOT"/>
+        <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+        <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <uses-permission android:name="android.permission.ACCESS_MTP" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
