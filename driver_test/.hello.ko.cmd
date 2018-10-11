@@ -1,0 +1,1 @@
+cmd_/home/tiny.hui/workspace/driver_test/hello.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.11.0-26-generic/scripts/module-common.lds --build-id  -o /home/tiny.hui/workspace/driver_test/hello.ko /home/tiny.hui/workspace/driver_test/hello.o /home/tiny.hui/workspace/driver_test/hello.mod.o
